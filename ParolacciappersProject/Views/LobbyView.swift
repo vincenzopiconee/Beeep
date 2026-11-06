@@ -21,25 +21,6 @@ struct LobbyView: View {
                     }, label: {
                         
                         ActionButton(title: "Create Game", isDisabled: false)
-                        /*
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 12)
-                                .fill(Color.black)
-                                .frame(width: 250, height: 50)
-                                .offset(x: 5, y: 7)
-                            
-                            Text("Create Game")
-                                .font(.headline)
-                                .foregroundColor(.black)
-                                .frame(width: 250, height: 50)
-                                .background(Color.white)
-                                .cornerRadius(12)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 12)
-                                        .stroke(Color.black, lineWidth: 2)
-                                )
-                        }
-                         */
                     })
                     .padding(.bottom)
                 
