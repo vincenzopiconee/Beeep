@@ -10,6 +10,29 @@
 
 ---
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Architecture and Engineering Highlights](#architecture-and-engineering-highlights)
+  - [1. Peer-to-Peer Mesh Networking](#1-peer-to-peer-mesh-networking-multipeerconnectivity)
+  - [2. Dual-Screen External Display Management](#2-dual-screen-external-display-management-screenmanager)
+  - [3. Modular SwiftUI Component Architecture](#3-modular-swiftui-component-architecture)
+  - [4. Internationalization and Localization](#4-internationalization-and-localization)
+- [Game Loop Architecture](#game-loop-architecture)
+- [Project Structure](#project-structure)
+- [Project Status and Technical Roadmap](#project-status-and-technical-roadmap)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation and Execution](#installation-and-execution)
+  - [Bonjour Network Permissions](#bonjour-network-permissions)
+- [Contributing and Development Guidelines](#contributing-and-development-guidelines)
+  - [Branching Strategy](#branching-strategy)
+  - [Development Workflow](#development-workflow)
+- [Origin and Project Background](#origin-and-project-background)
+- [License](#license)
+
+---
+
 ## Overview
 
 Beeep is a local multiplayer iOS party game engineered to operate entirely without internet connectivity or central cloud infrastructure. Utilizing local Wi-Fi and Bluetooth mesh networking, players connect directly between devices to participate in timed rounds of wordplay, scenario prompt reactions, and anonymous peer voting.
@@ -183,11 +206,20 @@ Contributions, bug reports, and architectural proposals are welcome. To maintain
 
 ---
 
-## Author
+## Origin and Project Background
 
-**Vincenzo Picone**  
-Apple Developer Academy Graduate  
-GitHub: [@vincenzopiconee](https://github.com/vincenzopiconee)
+### Academic Origin and Context
+This project was conceptualized and developed during the **Apple Developer Academy** in Naples, Italy (a partnership between Apple and the Università degli Studi di Napoli Federico II). The Academy operates on Apple's **Challenge-Based Learning (CBL)** framework, emphasizing collaborative exploration, multidisciplinary team sprints, agile delivery, and hardware-software synergy.
+
+### Creative Concept: From "Parolacciappers" to "Beeep"
+The project originated under the working title *Parolacciappers*, inspired by Italian colloquial language, regional expressions, and cultural wordplay. The design premise explores how taboo, humorous, or highly expressive words ("parolacce") can be defused into playful social interactions when constrained within unexpected social scenarios (such as a formal medical visit, meeting the in-laws, or presenting a project to a mentor). 
+
+The title **Beeep** represents the universal auditory censorship sound used in broadcast media, serving as both a thematic nod to colorful language and an emblem of the lighthearted, self-censoring comedic gameplay.
+
+### Collaborative Development
+The project was realized as a collaborative academic challenge:
+* **Architecture & Lead Engineering**: Vincenzo Picone designed and implemented the central peer-to-peer networking architecture (`MultipeerManager`), the secondary display window-scene orchestration pipeline (`ScreenManager`), the core game loops, and the reusable component design system.
+* **UI & View Collaboration**: Screen implementations and user interface flows were built in collaboration with Academy team peers (including Martha Mendoza Alfaro) across iterative design and playtesting cycles.
 
 ---
 
